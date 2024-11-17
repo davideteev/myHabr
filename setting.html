@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Хабр</title>
+    <link rel="stylesheet" href="style/setting.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1><a href="#">Мой Хабр</a></h1>
+    </header>
+    <nav class="menu">
+        <ul class="mainmenu">
+            <li><a href="#">Моя лента</a></li>
+            <li><a href="#">Все потоки</a></li>
+            <li><a href="#">Разработка</a></li>
+            <li><a href="#">Администрирование</a></li>
+            <li><a href="#">Дизайн</a></li>
+            <li><a href="#">Менеджмент</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Научпоп</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainc">
+        <form action="settng-article" class="setting-article-form">
+            <h1>Настройки публикации</h1>
+
+            <label>Тип публикации</label>
+            <div class="option-container">
+                <button type="button" class="option-button selected">Статья</button>
+                <button type="button" class="option-button">Другое</button>
+            </div>
+
+            <label>Язык публикации</label>
+            <div class="option-container">
+                <button type="button" class="option-button selected">Русский</button>
+                <button type="button" class="option-button">Английский</button>
+            </div>
+
+            <label>Ключевые слова</label>
+            <input type="text" class="keyword-input" placeholder="Введите ключевые слова">
+
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox"> Публикация является переводом
+                </label>
+            </div>
+
+            <label>Уровень сложности</label>
+            <div class="difficulty-container">
+                <label><input type="radio" name="difficulty" checked> Не указан</label>
+                <label><input type="radio" name="difficulty"> Простой</label>
+                <label><input type="radio" name="difficulty"> Средний</label>
+                <label><input type="radio" name="difficulty"> Сложный</label>
+            </div>
+
+            <label>Загрузить изображение для статьи</label>
+            <div class="image-upload-container">
+                <input type="file" id="image-upload-input" accept="image/*">
+            </div>
+
+            <textarea class="publication-text" placeholder="Текст, который вы написали на первом этапе статьи"></textarea>
+            <p>Не менее 30 и не более 3000 символов.</p>
+
+            <div class="form-buttons">
+                <button type="button" id="back-to-publication-btn">Назад к публикации</button>
+                <button type="submit">Опубликовать</button>
+            </div>
+        </form>
+
+        <div class="right-section">
+            <article class="contentx">
+                <h1>О песочнице</h1>
+                <p>Это «Песочница» — раздел, в который попадают дебютные публикации пользователей, желающих стать полноправными участниками сообщества.
+
+                    Если у вас есть приглашение, отправьте его автору понравившейся публикации — тогда её смогут прочитать и обсудить все остальные пользователи Хабра.
+                    
+                    Чтобы исключить предвзятость при оценке, все публикации анонимны, псевдонимы показываются случайным образом.</p>
+            </article>
+            
+            <article class="attendContent">
+                <h1>Памятка автору</h1>
+                <p>Соблюдайте правила сайта</p>
+                <p>Следуйте советам и заботливо оформляйте публикации</p>
+                <p>Загружайте картинки меньше 8мб для тела публикации и меньше 1мб для обложки публикации</p>
+            </article>
+        </div>
+    </main>
+    
+
+
+
+    <footer class="contacts">
+        <ul class=""></ul>
+    </footer>
+    <script src="js/content.js"></script>
+    <footer class="footer-page">
+        <div class="footer-section">
+            <h2>Ваш аккаунт</h2>
+            <hr>
+            <ul class="account-information">
+                <li><a href="enter.html">войти</a></li>
+                <li><a href="register.html">регистрация</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Секции</h2>
+            <hr>
+            <ul class="sections">
+                <li><p>статьи</p></li>
+                <li><p>новости</p></li>
+                <li><p>компании</p></li>
+                <li><p>авторы</p></li>
+                <li><p>песочница</p></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Информация</h2>
+            <hr>
+            <ul class="informations">
+                <li><p>устройства сайта</p></li>
+                <li><p>для авторов</p></li>
+                <li><p>для компаний</p></li>
+                <li><p>документы</p></li>
+                <li><p>соглашение</p></li>
+                <li><p>конфиденциальность</p></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Услуги</h2>
+            <hr>
+            <ul class="services">
+                <li><p>корпоративный блог</p></li>
+                <li><p>медийная реклама</p></li>
+                <li><p>нативные проекты</p></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/setting.js"></script>
+    <!setting.html-->
+</body>
+</html>

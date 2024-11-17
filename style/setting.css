@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Общие стили для body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('img.jpeg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Стили для шапки */
+.header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Стили для горизонтального меню */
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mainmenu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.mainmenu li {
+    margin: 0 15px;
+}
+
+.mainmenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mainmenu li a:hover {
+    text-decoration: underline;
+}
+.mainc {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    gap: 700px;
+}
+
+/* Стили для формы настройки публикации */
+.setting-article-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 20px auto;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.setting-article-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Стили для кнопок выбора */
+.option-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.option-button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.option-button.selected, .option-button:hover {
+    background-color: #555;
+}
+
+/* Стили для текстовых полей и чекбоксов */
+.keyword-input, .publication-text {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    resize: vertical;
+}
+
+.checkbox-container {
+    margin-bottom: 15px;
+}
+
+.checkbox-container label {
+    color: #ccc;
+}
+
+/* Стили для радиокнопок уровня сложности */
+.difficulty-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.difficulty-container label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.difficulty-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Стили для кнопок загрузки обложки */
+.cover-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cover-upload button {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cover-upload button:hover {
+    background-color: #555;
+}
+
+/* Кнопки отправки и возврата */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-buttons button:hover {
+    background-color: #555;
+}
+
+/* Правая секция */
+.right-section {
+    position: sticky;
+    top: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.right-section h1 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .right-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .setting-article-form {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Стиль для футера */
+.footer-page {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-section {
+    width: 23%;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    color: #fff;
+}

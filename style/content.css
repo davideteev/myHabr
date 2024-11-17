@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Общие стили для body */
+body {
+    display: flex;
+    flex-direction: column; /* Вертикальное распределение */
+    min-height: 100vh; /* Страница занимает всю высоту экрана */
+    background: url('img.jpeg') no-repeat center center/cover;
+}
+
+/* Стили для шапки */
+.header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .icon-article-create-link {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Стили для горизонтального меню */
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mainmenu {
+    display: flex;
+    justify-content: center; /* Центрируем меню по горизонтали */
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.mainmenu li {
+    margin: 0 15px;
+}
+
+.mainmenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mainmenu li a:hover {
+    text-decoration: underline;
+}
+
+/* Основной блок статьи */
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    width: 100%;
+}
+
+/* Форма статьи */
+.article-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    max-width: 1500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-grow: 1; /* Занимает всю доступную ширину */
+}
+
+.article-form h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.full-width-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Правая секция */
+.right-section {
+    position: sticky;
+    top: 20px;
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Для отступа между статьей и правой секцией */
+}
+
+.right-section h1 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.account-list {
+    list-style: none;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.account-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.account-list .account-item:nth-child(n+4) {
+    display: none;
+}
+
+.toggle-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Стиль для футера */
+.footer-page {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    margin-top: auto; /* Это гарантирует, что футер будет всегда внизу */
+}
+
+.footer-section {
+    width: 23%;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    color: #fff;
+}

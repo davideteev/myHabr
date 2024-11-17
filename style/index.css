@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(img.jpeg);
+}
+
+/* Стили для шапки */
+.header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Стили для горизонтального меню */
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mainmenu {
+    display: flex;
+    justify-content: center; /* Центрируем меню по горизонтали */
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.mainmenu li {
+    margin: 0 15px;
+}
+
+.mainmenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mainmenu li a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер для контента */
+.mainc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+
+}
+
+/* Стили для формы статьи */
+.article-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.article-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.article-form input[type="text"],
+.article-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.article-form input[type='text']::placeholder,
+.article-form textarea::placeholder {
+    color: #666;
+}
+
+.article-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.article-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.article-form button:hover {
+    background-color: #45a049;
+}
+/* Контейнер для правого блока */
+.right-section {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание по вертикали */
+    align-items: flex-end; /* Выравнивание по правому краю */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 600px; /* Задайте нужную ширину */
+}
+
+/* Стили для отдельных контейнеров */
+.contentx, .attendContent {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+/* Стиль для футера */
+.footer-page {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    margin-top: auto; /* Это гарантирует, что футер будет всегда внизу */
+}
+
+.footer-section {
+    width: 23%;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    color: #fff;
+}
