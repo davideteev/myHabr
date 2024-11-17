@@ -13,7 +13,7 @@ body {
     background: url(img.jpeg);
 }
 
-/* Стили для шапки */
+
 .header {
     background-color: #333;
     color: white;
@@ -28,7 +28,6 @@ body {
     font-size: 24px;
 }
 
-/* Стили для горизонтального меню */
 .menu {
     width: 100%;
     background-color: #333;
@@ -38,7 +37,7 @@ body {
 
 .mainmenu {
     display: flex;
-    justify-content: center; /* Центрируем меню по горизонтали */
+    justify-content: center; 
     list-style-type: none;
     padding: 10px 0;
     margin: 0;
@@ -58,7 +57,7 @@ body {
     text-decoration: underline;
 }
 
-/* Контейнер для контента */
+
 .mainc {
     display: flex;
     justify-content: flex-start;
@@ -68,9 +67,9 @@ body {
 
 }
 
-/* Стили для формы статьи */
+
 .article-form {
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     width: 100%;
@@ -121,22 +120,22 @@ body {
 .article-form button:hover {
     background-color: #45a049;
 }
-/* Контейнер для правого блока */
+
 .right-section {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Выравнивание по вертикали */
-    align-items: flex-end; /* Выравнивание по правому краю */
+    justify-content: flex-start; 
+    align-items: flex-end; 
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 600px; /* Задайте нужную ширину */
+    width: 600px; 
 }
 
-/* Стили для отдельных контейнеров */
+
 .contentx, .attendContent {
-    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -144,7 +143,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
-/* Стиль для футера */
 .footer-page {
     background-color: #333;
     padding: 20px;
@@ -154,7 +152,7 @@ body {
     margin-top: 20px;
     width: 100%;
     color: white;
-    margin-top: auto; /* Это гарантирует, что футер будет всегда внизу */
+    margin-top: auto;
 }
 
 .footer-section {

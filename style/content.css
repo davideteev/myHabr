@@ -7,15 +7,14 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Общие стили для body */
+
 body {
     display: flex;
-    flex-direction: column; /* Вертикальное распределение */
-    min-height: 100vh; /* Страница занимает всю высоту экрана */
+    flex-direction: column; 
+    min-height: 100vh; 
     background: url('img.jpeg') no-repeat center center/cover;
 }
 
-/* Стили для шапки */
 .header {
     background-color: #333;
     color: white;
@@ -48,7 +47,7 @@ body {
 
 .mainmenu {
     display: flex;
-    justify-content: center; /* Центрируем меню по горизонтали */
+    justify-content: center; 
     list-style-type: none;
     padding: 10px 0;
     margin: 0;
@@ -68,17 +67,17 @@ body {
     text-decoration: underline;
 }
 
-/* Основной блок статьи */
+
 .article {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
-    flex-grow: 1; /* Занимает оставшееся пространство */
+    flex-grow: 1; 
     width: 100%;
 }
 
-/* Форма статьи */
+
 .article-form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -86,7 +85,7 @@ body {
     max-width: 1500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    flex-grow: 1; /* Занимает всю доступную ширину */
+    flex-grow: 1; 
 }
 
 .article-form h2 {
@@ -115,7 +114,7 @@ body {
     border-radius: 8px;
 }
 
-/* Правая секция */
+
 .right-section {
     position: sticky;
     top: 20px;
@@ -124,7 +123,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 20px; /* Для отступа между статьей и правой секцией */
+    margin-top: 20px; 
 }
 
 .right-section h1 {
@@ -170,7 +169,7 @@ body {
     background-color: #555;
 }
 
-/* Медиазапросы для мобильных устройств */
+
 @media (max-width: 768px) {
     .article {
         flex-direction: column;
@@ -184,7 +183,7 @@ body {
     }
 }
 
-/* Стиль для футера */
+
 .footer-page {
     background-color: #333;
     padding: 20px;
@@ -194,7 +193,7 @@ body {
     margin-top: 20px;
     width: 100%;
     color: white;
-    margin-top: auto; /* Это гарантирует, что футер будет всегда внизу */
+    margin-top: auto;
 }
 
 .footer-section {

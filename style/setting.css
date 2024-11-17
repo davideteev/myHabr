@@ -8,7 +8,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Общие стили для body */
+
 body {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@ body {
     color: white;
 }
 
-/* Стили для шапки */
 .header {
     background-color: #333;
     color: white;
@@ -34,7 +33,7 @@ body {
     font-size: 24px;
 }
 
-/* Стили для горизонтального меню */
+
 .menu {
     width: 100%;
     background-color: #333;
@@ -72,7 +71,7 @@ body {
     gap: 700px;
 }
 
-/* Стили для формы настройки публикации */
+
 .setting-article-form {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -90,7 +89,7 @@ body {
     text-align: center;
 }
 
-/* Стили для кнопок выбора */
+
 .option-container {
     display: flex;
     gap: 10px;
@@ -113,7 +112,7 @@ body {
     background-color: #555;
 }
 
-/* Стили для текстовых полей и чекбоксов */
+
 .keyword-input, .publication-text {
     width: 100%;
     padding: 10px;
@@ -134,7 +133,6 @@ body {
     color: #ccc;
 }
 
-/* Стили для радиокнопок уровня сложности */
 .difficulty-container {
     display: flex;
     gap: 10px;
@@ -150,7 +148,6 @@ body {
     margin-right: 5px;
 }
 
-/* Стили для кнопок загрузки обложки */
 .cover-upload {
     display: flex;
     flex-direction: column;
@@ -173,7 +170,7 @@ body {
     background-color: #555;
 }
 
-/* Кнопки отправки и возврата */
+
 .form-buttons {
     display: flex;
     justify-content: space-between;
@@ -196,7 +193,6 @@ body {
     background-color: #555;
 }
 
-/* Правая секция */
 .right-section {
     position: sticky;
     top: 20px;
@@ -214,7 +210,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Медиазапросы для мобильных устройств */
+
 @media (max-width: 768px) {
     .right-section {
         width: 100%;
@@ -227,7 +223,7 @@ body {
     }
 }
 
-/* Стиль для футера */
+
 .footer-page {
     background-color: #333;
     padding: 20px;
